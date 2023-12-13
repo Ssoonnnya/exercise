@@ -1,15 +1,17 @@
 <?php
 
-function smallEnough($a, $limit)
-{
-    foreach ($a as $array) {
-        if ($array > $limit) {
-            return false;
+function people_with_age_drink(int $old): string {
+        if($old < 14){
+          return 'drink toddy';
+        } elseif( $old < 18){
+          return "drink coke";
+        } elseif($old < 21){
+          return  "drink beer";
+        } elseif($old >= 21){
+          return "drink whisky";
         }
-    }
-    return true; 
+        
+        $old = 15;
+        
 }
-
-$arr =[195, 123,201];
-$lim = 250;
 ?>
