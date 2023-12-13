@@ -1,17 +1,15 @@
 <?php
 
-function remainder($a, $b) {
-        if ($b == 0) {
-               return null;
-           }
-       
-           $larger = max($a, $b);
-           $smaller = min($a, $b);
-       
-           return $larger % $smaller;
-       }
-       
-       $num1 = 198;
-       $num2 = 5;
+function smallEnough($a, $limit)
+{
+    foreach ($a as $array) {
+        if ($array > $limit) {
+            return false;
+        }
+    }
+    return true; 
+}
 
+$arr =[195, 123,201];
+$lim = 250;
 ?>
