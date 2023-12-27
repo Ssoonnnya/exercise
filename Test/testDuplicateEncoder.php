@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-class MyTestBalance extends TestCase
+class MyBalanceTest extends TestCase
 {
     public function balance() {
         $this->assertSame('(((', duplicate_encode('puk'));
