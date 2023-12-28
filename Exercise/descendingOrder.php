@@ -2,13 +2,13 @@
 
 function descendingOrder(int $n): int {
 
-$digits = str_split($n);
+    $digits = str_split($n);
 
-rsort($digits);
+    rsort($digits);
 
-$result = (int)implode('', $digits);
+    $result = (int)implode('', $digits);
 
-return $result;
+    return $result;
 }
 
 ?>
